@@ -1,0 +1,64 @@
+def main():
+
+    print("Podaj swoje imię:")
+    first_name = input()
+    print("Podaj swoje nazwisko:")
+    last_name = input()
+    print(f'{first_name} {last_name}')
+    # print("Witaj " + first_name + last_name)
+    correct_number = False
+    while correct_number is not True:
+        print("Podaj proszę nr tel:") #jak wstawić funkcje sprawdzający brak wpisania (ujemnych liczb i znaków)
+        try:
+            mobile = int(input())
+        except ValueError:
+            print("Niepoprawna wartość!")
+        else:
+            correct_number = True
+    print("podaj prosze adres mail")
+    mail = input()
+
+    print("Czy wprowadzone dane są poprawne?")
+
+    print("Pora na własciwą ankietę, przed Toba wypelnienie siatki technical & soft skills")
+
+
+
+    # languages_technology_list =[ JavaScript, ReactJS, React Native, Python, Django, Java,
+                               # Spark, Scala, GitLab CI, Docker, Scrum, TDD, BDD, DDD,
+                               # PHP, R, Ruby, RoR, Perl, C++, C, GO, Clojure, Postgres, MySql, MongoDB,
+                               # Extreme Programming Kent Beck,Design Patterns, Kanban, Customer Development Process,
+                               # Lean Startup, Waterfall, Unix, Linux, LaTeX ]
+
+    # lvl_list = [entry, junior, midle, senior, ND]
+
+    print ("z listy języków i technologii poniżej, wybierz te w których programujesz.")
+    print ("z listy poziomów zaawansowania dobierz stopień znajomości")
+    print ("NP: JavaScript = Entry")
+    print("NP: Python = Senior")
+    print ("Lista języków i technologii JavaScript, ReactJS, React Native, Python, Django, Java," 
+           "Spark, Scala, GitLab CI, Docker, Scrum, TDD, BDD, DDD, PHP, R, Ruby, RoR, Perl, C++, C, GO, "
+           "Clojure, Postgres, MySql, MongoDB, Extreme Programming Kent Beck,Design Patterns " 
+           "Kanban, Customer Development Process, Lean Startup, Waterfall, Unix, Linux, LaTeX" )
+
+
+
+    print("Poziom znajomości języków: entry, junior, midle, senior, ND ")
+    tech_skills = input()
+
+    print("Jaki kierunek technologii interesuje Ciebie pod katem rozwoju osobistego?")
+    # languages_technology_list =[ JavaScript, ReactJS, React Native, Python, Django, Java,
+    # Spark, Scala, GitLab CI, Docker, Scrum, TDD, BDD, DDD,
+    # PHP, R, Ruby, RoR, Perl, C++, C, GO, Clojure, Postgres, MySql, MongoDB,
+    # Extreme Programming Kent Beck,Design Patterns, Kanban, Customer Development Process,
+    # Lean Startup, Waterfall, Unix, Linux, LaTeX ]
+    future_skills = input()
+
+    print( "Soft skills - czy interesuje Cię także rozwój osobisty w tym obszarze? TAK/NIE")
+    answer=input()
+
+    print("podsumowując, wybrałaś/eś obecnie chciałbyś się rozwijać" + future_skills )
+    print ("Pod kątem rozwoju soft skilli, zaznaczona została odpowiedź" + answer  )
+
+if __name__ == "__main__":
+    main()
